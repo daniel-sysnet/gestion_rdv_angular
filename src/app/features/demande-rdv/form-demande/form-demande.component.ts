@@ -1,0 +1,12 @@
+import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
+import { HeaderComponent } from '../../../layouts/header/header.component';
+
+@Component({
+  selector: 'app-form-demande',
+  templateUrl: './form-demande.component.html',
+  styleUrl: './form-demande.component.css'
+})
+export class FormDemandeComponent {
+
+}
