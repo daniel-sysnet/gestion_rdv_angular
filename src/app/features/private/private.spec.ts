@@ -2,7 +2,6 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { Private } from './private';
 
-
 describe('Private', () => {
   let component: Private;
   let fixture: ComponentFixture<Private>;

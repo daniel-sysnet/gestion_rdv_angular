@@ -6,7 +6,6 @@ describe('Rv', () => {
   let component: Rv;
   let fixture: ComponentFixture<Rv>;
 
-  
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [Rv]

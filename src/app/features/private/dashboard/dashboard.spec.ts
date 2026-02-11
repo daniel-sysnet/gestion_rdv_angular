@@ -5,6 +5,7 @@ import { Dashboard } from './dashboard';
 describe('Dashboard', () => {
   let component: Dashboard;
   let fixture: ComponentFixture<Dashboard>;
+
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [Dashboard]

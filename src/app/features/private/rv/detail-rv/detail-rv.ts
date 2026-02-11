@@ -7,7 +7,6 @@ import { RouterLink } from '@angular/router';
   imports: [RouterLink],
   templateUrl: './detail-rv.html',
 })
-
 export class DetailRv {
   showInfos = false;
   showOrdonnance = false;

@@ -7,4 +7,5 @@ import { RouterLink } from '@angular/router';
   styleUrl: './dossier-medical.css',
 })
 export class DossierMedical {
+
 }
