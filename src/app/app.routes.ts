@@ -1,17 +1,33 @@
 import { Routes } from '@angular/router';
-import { DashboardComponent } from './features/dashboard/dashboard.component';
-import { FormDemandeComponent } from './features/demande-rdv/form-demande/form-demande.component';
-import { DemandeRdvComponent } from './features/demande-rdv/demande-rdv.component';
-import { ListDemandeComponent } from './features/demande-rdv/list-demande/list-demande.component';
-import { PatientComponent } from './features/patient/patient.component';
-import { RvComponent } from './features/rv/rv.component';
-
+import { Public } from './features/public/public';
+import { Private } from './features/private/private';
+import { Dashboard } from './features/private/dashboard/dashboard';
+import { Rv } from './features/private/rv/rv';
+import { DetailRv } from './features/private/rv/detail-rv/detail-rv';
+import { CreatePatient } from './features/public/create-patient/create-patient';
+import { DossierMedical } from './features/private/dossier-medical/dossier-medical'; 
+import { FormDemande } from './features/public/form-demande/form-demande';
+import { DemandeRv } from './features/private/demande-rv/demande-rv';
+import  {Login} from './features/public/login/login'
 export const routes: Routes = [
-  { path: 'dash', component: DashboardComponent },
-  { path: '', redirectTo: '/dash', pathMatch: 'full' },
-  { path: 'form-demande', component: FormDemandeComponent },
-  { path: 'demandes-rv', component: DemandeRdvComponent },
-  { path: 'mes-demandes', component: ListDemandeComponent },
-  { path: 'patients', component: PatientComponent },
-  { path: 'mes-rv', component: RvComponent }
+    { path: 'public', component: Public,
+      children: [
+        { path: 'login', component: Login },
+        { path: 'create-patient', component: CreatePatient },
+        { path: 'form-demande', component: FormDemande },
+        { path: '', redirectTo: 'login', pathMatch: 'full' }
+      ]
+
+    },
+    { path: 'private', component: Private,
+      children: [
+         { path: 'dash', component: Dashboard },
+         { path: 'rv', component: Rv },
+         { path: 'rv/detail/:id', component: DetailRv },
+         { path: 'patient/dossier', component: DossierMedical },
+         { path: 'demande-rv', component: DemandeRv },
+      ]
+    },
+    { path: '', redirectTo: '/public/login', pathMatch: 'full' },
+   
 ];
