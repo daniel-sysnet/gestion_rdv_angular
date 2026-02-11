@@ -6,6 +6,7 @@ describe('DetailRv', () => {
   let component: DetailRv;
   let fixture: ComponentFixture<DetailRv>;
 
+  
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [DetailRv]

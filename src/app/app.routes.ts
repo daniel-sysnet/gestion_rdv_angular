@@ -5,7 +5,7 @@ import { Dashboard } from './features/private/dashboard/dashboard';
 import { Rv } from './features/private/rv/rv';
 import { DetailRv } from './features/private/rv/detail-rv/detail-rv';
 import { CreatePatient } from './features/public/create-patient/create-patient';
-import { DossierMedical } from './features/private/dossier-medical/dossier-medical'; 
+import { DossierMedical } from './features/private/dossier-medical/dossier-medical';
 import { FormDemande } from './features/public/form-demande/form-demande';
 import { DemandeRv } from './features/private/demande-rv/demande-rv';
 import  {Login} from './features/public/login/login'
@@ -29,5 +29,5 @@ export const routes: Routes = [
       ]
     },
     { path: '', redirectTo: '/public/login', pathMatch: 'full' },
-   
+
 ];

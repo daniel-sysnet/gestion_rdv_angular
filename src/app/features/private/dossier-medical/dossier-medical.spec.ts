@@ -21,3 +21,4 @@ describe('DossierMedical', () => {
     expect(component).toBeTruthy();
   });
 });
+

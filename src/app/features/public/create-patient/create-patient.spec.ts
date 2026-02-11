@@ -21,3 +21,4 @@ describe('CreatePatient', () => {
     expect(component).toBeTruthy();
   });
 });
+

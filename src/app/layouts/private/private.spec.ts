@@ -5,6 +5,7 @@ import { Private } from './private';
 describe('Private', () => {
   let component: Private;
   let fixture: ComponentFixture<Private>;
+  
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({

@@ -11,3 +11,4 @@ import { Header } from '../../layouts/private/header/header';
 export class Private {
 
 }
+
