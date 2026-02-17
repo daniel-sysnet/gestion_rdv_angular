@@ -15,6 +15,11 @@
     "experimentalDecorators": true,
     "moduleResolution": "bundler",
     "importHelpers": true,
+    "baseUrl": "./",
+    "paths": {
+      "@mocks": ["src/app/mocks/index.ts"],
+      "@mocks/*": ["src/app/mocks/*"]
+    },
     "target": "ES2022",
     "module": "ES2022"
   },
