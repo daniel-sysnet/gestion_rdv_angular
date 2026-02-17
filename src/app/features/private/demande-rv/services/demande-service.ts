@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { MOCK_DEMANDES } from '../../../../mocks/demande.mock';
+import { MOCK_DEMANDES } from '@mocks';
 import { DemandeRVFilterModel, DemandeListeRVModel, DemandeListeResponse } from '../models/demande.model';
 import { environment } from '../../../../../environments/environment.development';
 @Injectable({
@@ -28,7 +28,7 @@ export class DemandeService {
     const TotalPages = Math.ceil(demandes.length / size);
     /*
     programmation impérative
-    const pages: number[] = [] 
+    const pages: number[] = []
     for (let i = 1; i <= TotalPages; i++) {
       pages.push(i);
     }
@@ -41,7 +41,7 @@ export class DemandeService {
       totalItems: demandes.length,
       pages: pages,
       size: size
-    
+
    };
  }
 }
